@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="cont">
+        <div class="left">
+            <img src="https://img.freepik.com/premium-photo/online-job-search-modish-website-worker-search-job-opportunities-recruitment-internet-network_31965-272886.jpg" alt="">
+        </div>
+        
+    </div>
+    <div (ngSubmit)="onSubmit()">
+        <label> Name: <input type="text" [(ngModel)]="name" name="name" required>
+        </label>
+        <br>
+        <label> Email: <input type="email" [(ngModel)]="email" name="email" required>
+        </label>
+        <br>
+        <label> Password: <input type="password" [(ngModel)]="password" name="password" required>
+        </label>
+        <br>
+        <button type="submit">Submit</button>
+    </div>
+    
+</div>

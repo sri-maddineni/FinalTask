@@ -1,0 +1,110 @@
+.nav{
+background-color: rgba(33, 37, 41, 0.882)
+}
+
+
+.icon {
+    margin: 8px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.btn-success a{
+    text-decoration: none;
+    color: white;
+} 
+
+.links ul li a{
+    margin-right: 30px;
+    align-items: center;
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.links ul li a:hover{
+    border-bottom: solid 3px cyan;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.mob {
+    display: none;
+}
+
+
+@media screen and (max-width:856px) {
+
+    .nav {
+        display: none;
+    }
+
+    .mob {
+        display: block;
+    }
+
+    .mob .icon {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    
+
+    .mob .moblinks ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+
+    .mob .moblinks ul li {
+        list-style: none;
+        font-size: 1rem;
+        margin: 2px;
+        padding: 2px;
+        list-style: none;
+    }
+
+    .xmark{
+        font-size: 1.5rem;
+    }
+
+
+
+    .moblinks {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        background-color: rgb(64, 64, 64);
+        color: rgb(255, 255, 255);
+       
+        display: flex;
+    }
+
+
+}

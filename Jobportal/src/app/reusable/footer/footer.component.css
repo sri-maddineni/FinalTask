@@ -1,0 +1,47 @@
+.qlinks{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.qlinks ul{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.qlinks ul li a{
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color:white;
+}
+
+.ficons{
+    justify-content: center;
+    align-items: center;
+}
+
+.ficons ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.ficons ul li{
+    margin: 10px;
+    align-items: center;
+}
+
+.ficons ul li a{
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: wheat;
+    font-size: 1.3rem;
+}
+
+h3{
+    font-weight: 600;
+    margin: 10px;
+}

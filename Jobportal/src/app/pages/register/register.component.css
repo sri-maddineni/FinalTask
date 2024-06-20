@@ -1,0 +1,21 @@
+.cont{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.image{
+    background-image: "https://img.freepik.com/premium-photo/online-job-search-modish-website-worker-search-job-opportunities-recruitment-internet-network_31965-272886.jpg";
+    background-repeat: no-repeat;
+}
+
+.left{
+    margin-top: 10px;
+    border-right: solid 2px black;
+    height: 100%;
+    border: solid 1px black;
+}
