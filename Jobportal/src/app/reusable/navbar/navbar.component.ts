@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,16 +8,21 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  public clicked:boolean=false;
   
+
+  public clicked:boolean=false;
 
   public cross="fa-solid fa-xmark m-2"
   public bars="fa-solid fa-bars fa-2x"
 
   public iconclass:string=this.bars
-
+ 
 
   public togglemenu(){
+
+    
+
+
     this.clicked=!this.clicked;
     if(this.clicked){
       this.iconclass=this.cross

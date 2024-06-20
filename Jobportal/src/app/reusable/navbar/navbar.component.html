@@ -1,21 +1,21 @@
 <div class="nav">
     <div class="container cont">
         <div style="display: flex;flex-direction: row;">
-            <h3 class="title"><span class="text-primary">JOB </span><span class="text-warning">PORTAL</span></h3>
+            <h3 class="title"><span class="text-light">JOB </span><span class="text-warning">PORTAL</span></h3>
             <i class="fa-solid fa-briefcase fa-2x icon text-warning"></i>
         </div>
         <div class="links text-white">
             <ul>
-                <li><a routerLink="/">Home</a></li>
-                <li><a routerLink="/about">About</a></li>
-                <li><a routerLink="/contact">Contact</a></li>
+                <li><i class="fa-solid fa-house mx-2"></i><a routerLink="/">Home</a></li>
+                <li><i class="fa-solid fa-circle-info mx-2"></i><a routerLink="/about">About</a></li>
+                <li><i class="fa-solid fa-phone mx-2"></i><a routerLink="/contact">Contact</a></li>
                 <div class="btn btn-sm btn-success m-2"><a routerLink="/login">Login</a></div>
                 <div class="btn btn-sm btn-success m-2"><a routerLink="/register">Register</a></div>
             </ul>
         </div>
     </div>
 </div>
-
+ 
 
 <div class="mob">
     <div class="container bg-dark"
@@ -35,9 +35,11 @@
 
     <div class="moblinks" *ngIf="clicked">
         <ul>
-            <li>Home</li>
-            <li>Login</li>
-            <li>Register</li>
+            <li><i class="fa-solid fa-house mx-2"></i><a routerLink="/">Home</a></li>
+            <li><i class="fa-solid fa-circle-info mx-2"></i><a routerLink="/about">About</a></li>
+            <li><i class="fa-solid fa-phone mx-2"></i><a routerLink="/contact">Contact</a></li>
+            <div class="btn btn-sm btn-success m-2"><a routerLink="/login">Login</a></div>
+            <div class="btn btn-sm btn-success m-2"><a routerLink="/register">Register</a></div>
         </ul>
     </div>
 

@@ -1,7 +1,6 @@
-.nav{
-background-color: rgba(33, 37, 41, 0.882)
+.nav {
+    background-color: rgba(33, 37, 41, 0.882)
 }
-
 
 .icon {
     margin: 8px;
@@ -26,15 +25,15 @@ background-color: rgba(33, 37, 41, 0.882)
     list-style: none;
 }
 
-.btn-success a{
+.btn-success a {
     text-decoration: none;
     color: white;
-} 
+}
 
-.links ul li a{
+.links ul li a {
     margin-right: 30px;
     align-items: center;
-    
+
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
@@ -42,8 +41,9 @@ background-color: rgba(33, 37, 41, 0.882)
     color: white;
 }
 
-.links ul li a:hover{
-    border-bottom: solid 3px cyan;
+.links ul li a:hover {
+    border-bottom: solid 3px rgb(212, 255, 0);
+    padding-top: 2px;
 }
 
 .title {
@@ -65,15 +65,28 @@ background-color: rgba(33, 37, 41, 0.882)
 
     .mob {
         display: block;
+        position: fixed;
+        /* Or absolute, depending on your layout needs */
+        top: 0;
+        /* Position at the top of the viewport */
+        left: 0;
+        /* Position at the left edge of the viewport */
+        right: 0;
+        /* Stretch to the right edge of the viewport */
+        width: 100%;
+        /* Ensure it spans the full width of the viewport */
+        z-index: 1000;
+
     }
 
     .mob .icon {
+
         display: flex;
         flex-direction: row;
         margin: 10px;
     }
 
-    
+
 
     .mob .moblinks ul {
         display: flex;
@@ -90,7 +103,7 @@ background-color: rgba(33, 37, 41, 0.882)
         list-style: none;
     }
 
-    .xmark{
+    .xmark {
         font-size: 1.5rem;
     }
 
@@ -102,9 +115,26 @@ background-color: rgba(33, 37, 41, 0.882)
         right: 0;
         background-color: rgb(64, 64, 64);
         color: rgb(255, 255, 255);
-       
+
         display: flex;
     }
+
+
+    .moblinks ul{
+        text-decoration: none;
+    }
+
+    .moblinks ul a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .moblinks ul .btn{
+        color: black;
+        text-decoration: none;
+    }
+
+
 
 
 }

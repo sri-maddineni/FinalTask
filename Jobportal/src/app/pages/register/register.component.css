@@ -1,21 +1,47 @@
-.cont{
+.container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.left {
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+
+}
+
+
+
+.right {
+    margin: 10px;
+    width: 50%;
     
 }
 
-*{
-    font-family:'Times New Roman', Times, serif;
+.right form{
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
 }
 
-.image{
-    background-image: "https://img.freepik.com/premium-photo/online-job-search-modish-website-worker-search-job-opportunities-recruitment-internet-network_31965-272886.jpg";
-    background-repeat: no-repeat;
-}
 
-.left{
-    margin-top: 10px;
-    border-right: solid 2px black;
-    height: 100%;
-    border: solid 1px black;
+@media screen and (max-width:856px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        align-items: center;
+    
+    }
+    
 }

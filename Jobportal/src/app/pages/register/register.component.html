@@ -1,22 +1,55 @@
 <app-navbar></app-navbar>
 <div class="container">
-    <div class="cont">
-        <div class="left">
-            <img src="https://img.freepik.com/premium-photo/online-job-search-modish-website-worker-search-job-opportunities-recruitment-internet-network_31965-272886.jpg" alt="">
-        </div>
-        
-    </div>
-    <div (ngSubmit)="onSubmit()">
-        <label> Name: <input type="text" [(ngModel)]="name" name="name" required>
-        </label>
-        <br>
-        <label> Email: <input type="email" [(ngModel)]="email" name="email" required>
-        </label>
-        <br>
-        <label> Password: <input type="password" [(ngModel)]="password" name="password" required>
-        </label>
-        <br>
-        <button type="submit">Submit</button>
+    <div class="left card">
+        <form class="m-5" (ngSubmit)="oncompanysubmit()">
+            <div class="mb-3">
+                <label for="exampleInputtext2" class="form-label">Full Name</label>
+                <input type="text" class="form-control" [(ngModel)]="title" placeholder="Enter title"
+                    id="fname1" name="title" aria-describedby="textHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword3" class="form-label">Description</label>
+                <input type="text" [(ngModel)]="des" class="form-control" placeholder="Enter description" name="des"
+                    id="des1">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-sm">Add todo</button>
+        </form>
     </div>
     
+    <div class="right card">
+        <h1 class="text-center">Register as user</h1>
+        <form class="m-3" (ngSubmit)="onsubmit()">
+            <div class="mb-3">
+                <label for="exampleInputtext1" class="form-label">Full Name</label>
+                <input type="text" class="form-control" [(ngModel)]="fname" placeholder="Enter FullName"
+                    id="fname2" name="fname" aria-describedby="textHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail2" class="form-label">Email</label>
+                <input type="email" [(ngModel)]="email" class="form-control" placeholder="Enter email" name="des"
+                    id="email1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputUsername1" class="form-label">Enter UserName</label>
+                <input type="email" [(ngModel)]="uname" class="form-control" placeholder="Enter UserName" name="uname"
+                    id="uname1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter Password</label>
+                <input type="password" [(ngModel)]="password" class="form-control" placeholder="Enter Password"
+                    name="password" id="pw1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword2" class="form-label">confirm Password</label>
+                <input type="password" [(ngModel)]="cpassword" class="form-control" placeholder="confirm Password"
+                    name="cpassword" id="cpw1">
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-danger text-center">Register as User</button>
+            </div>
+        </form>
+    </div>
+
 </div>
